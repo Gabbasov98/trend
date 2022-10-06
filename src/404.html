@@ -1,0 +1,76 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"ru", "title":"Главная", "description":"", "keywords":"",})
+
+<body>
+    <div class="wrapper wrapper--inner">
+        <header class="header header--inner">
+            @@include('components/page-blocks/_header2.html')
+        </header>
+        <main class="content">
+
+            <section class="error">
+                <div class="info__inner container">
+                    <div class="info__content">
+                        <div class="error__title display1">404</div>
+                        <div class="error__subtitle display2">
+                            The page you are looking for can’t be found.
+                        </div>
+                        <div class="error__desc">
+                            Visit our
+                            <a href="">homepage </a>
+                            or try
+                            <a href="">contact us</a>
+                        </div>
+                    </div>
+                    <div class="info__img">
+                        <div class="info__img-wrapper">
+                            <img class="info__img-pic" src="img/info2.webp" alt="">
+                            <svg class="info__img-rect" width="708" height="708" viewBox="0 0 708 708" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g filter="url(#filter0_b_716_210)">
+                                    <rect x="354" y="708" width="500" height="500" transform="rotate(-135 354 708)" fill="white" fill-opacity="0.1"/>
+                                    <rect x="354" y="707.646" width="499.5" height="499.5" transform="rotate(-135 354 707.646)" stroke="white" stroke-width="0.5"/>
+                                </g>
+                                <g class="small-animate" filter="url(#filter1_b_716_210)">
+                                    <rect x="354" y="708" width="375" height="375" transform="rotate(-135 354 708)" fill="white" fill-opacity="0.1"/>
+                                    <rect x="354" y="707.646" width="374.5" height="374.5" transform="rotate(-135 354 707.646)" stroke="white" stroke-width="0.5"/>
+                                </g>
+                                <rect class="medium-animate" x="354" y="707.646" width="249.5" height="249.5" transform="rotate(-135 354 707.646)" stroke="white" stroke-width="0.5"/>
+                                <g class="large-animate" filter="url(#filter2_b_716_210)">
+                                    <rect x="354" y="708" width="125" height="125" transform="rotate(-135 354 708)" fill="white" fill-opacity="0.1"/>
+                                    <rect x="354" y="707.646" width="124.5" height="124.5" transform="rotate(-135 354 707.646)" stroke="white" stroke-width="0.5"/>
+                                </g>
+                                <defs>
+                                    <filter id="filter0_b_716_210" x="-4.55339" y="-4.10681" width="717.107" height="717.107" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="2.5"/>
+                                        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_716_210"/>
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_716_210" result="shape"/>
+                                    </filter>
+                                    <filter id="filter1_b_716_210" x="78.835" y="167.67" width="550.33" height="550.33" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="5"/>
+                                        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_716_210"/>
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_716_210" result="shape"/>
+                                    </filter>
+                                    <filter id="filter2_b_716_210" x="245.612" y="511.223" width="216.777" height="216.777" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="10"/>
+                                        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_716_210"/>
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_716_210" result="shape"/>
+                                    </filter>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        <footer class="footer footer--inner">
+            @@include('components/page-blocks/_footer2.html')
+        </footer>
+    </div>
+
+    @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

@@ -297,6 +297,7 @@
 @media screen and (max-width: 992px){
   .main{
     justify-content: flex-end;
+    overflow: hidden;
     &__title{
       max-width: 320px;
     }
@@ -375,6 +376,7 @@
     }
     &__title{
       font-size: 80px;
+      width: 100%;
     }
     &__info{
       padding-top: 40px;

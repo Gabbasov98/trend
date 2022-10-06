@@ -13,7 +13,7 @@
                         <div class="main__content">
                             <h1 class="main__title display1">International trade and logistics</h1>
                             <div class="main__desc">Your reliable source for trade and logistics for more than 10 years</div>
-                            <button class="main__btn mbtn mbtn-primary">Find Out More</button>
+                            <button data-modal="contactModal" class="main__btn mbtn mbtn-primary">Find Out More</button>
                         </div>
                         <svg width="945" height="1240"  class="main__img" viewBox="0 0 945 1240" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect x="705.567" y="1239.14" width="199" height="199" transform="rotate(-135 705.567 1239.14)" stroke="white"/>
@@ -178,6 +178,7 @@
                         </div>
                     </div>
                 </section>
+
                 <section id="about" class="about page__screen screen light-slide">
                     <div class="about__inner screen__content container">
                         <div class="about__top">
@@ -201,6 +202,7 @@
                         </div>
                     </div>
                 </section>
+
                 <section id="why" class="why page__screen screen light-slide">
                     <div class="why__inner screen__content container">
                         <div class="why__title display1">Why us</div>
@@ -209,6 +211,7 @@
                         </div>
                     </div>
                 </section>
+
                 <section class="why2 page__screen screen light-slide">
                     <div class="why2__inner screen__content container">
                         <div class="why2__content">
@@ -221,6 +224,7 @@
                         <img src="img/world.png" alt="" class="why2__img">
                     </div>
                 </section>
+
                 <footer class="footer page__screen screen light-slide">
                     @@include('components/page-blocks/_footer.html')
                 </footer>
@@ -230,7 +234,58 @@
         </main>
 
     </div>
+    <div class="modal" id="contactModal">
+        <div class="modal__dialog">
+            <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.55401 10.5L2 2.94599L2.94599 2L10.5 9.55401L18.054 2L19 2.94599L11.446 10.5L19 18.054L18.054 19L10.5 11.446L2.94599 19L2 18.054L9.55401 10.5Z" fill="#333333"/>
+                </svg>
+            </button>
 
+            <form action="" class="modal__form">
+                <div class="modal__form-grid">
+                    <fieldset class="form-group">
+                        <input type="tel" placeholder="Phone Number">
+                    </fieldset>
+                    <fieldset class="form-group">
+                        <input type="email" placeholder="Email Address">
+                    </fieldset>
+                    <fieldset class="form-group">
+                        <input type="text" placeholder="First Name">
+                    </fieldset>
+                    <fieldset class="form-group">
+                        <input type="text" placeholder="Last Name">
+                    </fieldset>
+                    <fieldset class="form-group modal__form-full">
+                        <textarea placeholder="Your Message"></textarea>
+                    </fieldset>
+                </div>
+                <button class="modal__btn mbtn mbtn-secondary">
+                    Send Message
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!--    Этот код js вызовет модалку "Спасибо"-->
+    <!--    openModal('thankModal')-->
+
+    <div class="modal thank-modal" id="thankModal">
+        <div class="modal__dialog">
+            <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.55401 10.5L2 2.94599L2.94599 2L10.5 9.55401L18.054 2L19 2.94599L11.446 10.5L19 18.054L18.054 19L10.5 11.446L2.94599 19L2 18.054L9.55401 10.5Z" fill="#333333"/>
+                </svg>
+            </button>
+
+            <div class="modal__title display2">Thank you!</div>
+            <div class="modal__desc">Your message has been sent.
+                We will get back to your shortly</div>
+            <button class="modal__btn mbtn mbtn-secondary" onclick="closeModal()">
+                OK
+            </button>
+        </div>
+    </div>
     @@include('components/page-blocks/_scripts.html')
 </body>
 

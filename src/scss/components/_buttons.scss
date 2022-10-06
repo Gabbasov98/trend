@@ -10,7 +10,8 @@
     }
 }
 
-.mbtn-primary{
+.mbtn-primary,
+.mbtn-secondary{
     height: 60px;
     padding: 0 20px;
     font-size: 20px;
@@ -30,3 +31,15 @@
     }
 }
 
+.mbtn-secondary{
+    background-color: $secondary;
+    color: #fff;
+    &:hover{
+        background-color: $secondaryHover;
+        color: #fff;
+    }
+    &:active{
+        background-color: $secondaryActive;
+        color: #fff;
+    }
+}

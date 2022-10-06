@@ -7,19 +7,45 @@
   width: 100%;
   padding: 28px 0 0;
   transition: color 1s ease 0s;
+  &--inner{
+    padding: 40px 0;
+    position: static;
+    color: $black;
+    .header__inner{
+      justify-content: unset;
+      align-items: center;
+    }
+    .header__lang{
+      margin-left: 225px;
+    }
+    .header__logo{
+      margin: 0;
+      path{
+        fill: $secondary;
+      }
+    }
+  }
   &--dark{
     color: $black;
   }
   &__inner{
     display: flex;
     justify-content: space-between;
+    position: relative;
+  }
+  &__back{
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    transform: translate(-45px,-50%);
   }
   &__logo{
     display: block;
     width: 175px;
     margin-top: 2px;
-    img{
+    svg{
       width: 100%;
+      height: auto;
       display: block;
     }
   }
@@ -52,6 +78,16 @@
   display: flex;
   &__link{
     margin: 0 10px;
+  }
+}
+
+@media screen and (max-width: 1750px){
+  .header{
+    &__back{
+      transform: unset;
+      position: static;
+      margin-right: 30px;
+    }
   }
 }
 

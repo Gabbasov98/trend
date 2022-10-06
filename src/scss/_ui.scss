@@ -5,7 +5,8 @@
 .form-group {
     position: relative;
     margin: 0;
-    input {
+    input,
+    textarea{
         border: none;
         border-bottom: 1px solid rgba($black, .1);
         height: 70px;
@@ -19,6 +20,11 @@
         &:focus{
             border-color: rgba($black, .7);
         }
+    }
+    textarea{
+        padding: 22px 0;
+        height: 230px;
+        resize: none;
     }
 }
 

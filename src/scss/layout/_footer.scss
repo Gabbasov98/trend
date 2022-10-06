@@ -1,4 +1,17 @@
 .footer{
+  &--inner{
+    .screen__content{
+      opacity: 1;
+    }
+    .footer__top{
+      &::after{
+        content: '';
+        display: block;
+        width: 493px;
+        max-width: 100%;
+      }
+    }
+  }
   &__inner{
     padding-bottom: 35px;
     padding-top: 90px;
@@ -99,6 +112,13 @@
 
 @media screen and (max-width: 992px){
   .footer{
+    &--inner{
+      .footer__top{
+        &::after{
+          display: none;
+        }
+      }
+    }
     &__inner{
       padding-bottom: 80px;
     }
@@ -132,6 +152,7 @@
         font-weight: 700;
         font-size: 20px;
         line-height: 24px;
+        margin: 0;
       }
     }
   }
