@@ -99,12 +99,12 @@ function setHeaderColor() {
 
 
 const resizeHandlerSlider = () => {
-    if (window.innerWidth < 992) {
-        pageSlider.destroy();
-    } else{
+    if (window.innerWidth > 992) {
         pageSlider.init()
     }
 }
+
+
 
 resizeHandlerSlider()
 
