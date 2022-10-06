@@ -93,4 +93,19 @@ function setHeaderColor() {
 }
 
 
-pageSlider.init()
+// pageSlider.init()
+
+
+
+
+const resizeHandlerSlider = () => {
+    if (window.innerWidth < 992) {
+        pageSlider.destroy();
+    } else{
+        pageSlider.init()
+    }
+}
+
+resizeHandlerSlider()
+
+window.addEventListener('resize', resizeHandlerSlider);
