@@ -1,0 +1,5 @@
+@import '../_mixins';
+@include font-face('Arial', 'ArialMT', 400);
+@include font-face('Arial', 'Arial-BoldMT', 700);
+@include font-face('Neue Haas Grotesk Display Pro', 'NeueHaasDisplay-Roman', 400);
+@include font-face('Neue Haas Grotesk Display Pro', 'NeueHaasDisplay-Bold', 700);

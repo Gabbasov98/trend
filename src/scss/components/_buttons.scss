@@ -1,0 +1,32 @@
+@import "../vars";
+.mbtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all ease-out .225s;
+    padding: 0;
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+.mbtn-primary{
+    height: 60px;
+    padding: 0 20px;
+    font-size: 20px;
+    letter-spacing: -0.8px;
+}
+
+.mbtn-primary{
+    background-color: $primary;
+    color: $secondary;
+    &:hover{
+        background-color: $primaryHover;
+        color: $secondary;
+    }
+    &:active{
+        background-color: $primaryActive;
+        color: $secondary;
+    }
+}
+

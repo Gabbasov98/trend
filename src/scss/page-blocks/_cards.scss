@@ -1,0 +1,30 @@
+.help-card{
+  background: #F9F9F9;
+  padding: 30px 16px 10px;
+  position: relative;
+  transition: all .3s;
+  &:hover{
+    background: $secondary;
+    color: #fff;
+    .help-card__icon{
+      path{
+        fill: #fff;
+      }
+    }
+    .help-card__img{
+      rect{
+        stroke: #fff;
+      }
+    }
+  }
+  &__icon{
+    position: absolute;
+    top: 16px;
+    left: 16px;
+  }
+  &__img{
+    max-width: 100%;
+    display: block;
+    margin: 0 auto 17px;
+  }
+}
