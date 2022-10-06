@@ -31,14 +31,14 @@ let pageSlider = new Swiper(".page",{
 
     on: {
         init: function () {
-            // setScrollType()
+            setScrollType()
         },
         slideChange: function () {
             setHeaderColor()
             // setScrollType()
         },
         resize: function () {
-            // setScrollType()
+            setScrollType()
         }
     },
     breakpoints: {

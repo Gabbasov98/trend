@@ -47,9 +47,11 @@
 
 @media screen and (max-width: 992px){
   .screen{
+    flex: unset;
     &__content {
       padding-top: 90px;
       padding-bottom: 90px;
+      opacity: 1;
     }
   }
 }
