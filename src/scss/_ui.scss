@@ -5,6 +5,28 @@
 .form-group {
     position: relative;
     margin: 0;
+    &--error{
+        &::before{
+            content: attr(data-error);
+            position: absolute;
+            right: 0;
+            top: -5px;
+            font-style: normal;
+            font-size: 12px;
+            line-height: 20px;
+            letter-spacing: -0.3px;
+            color: #0075FF;
+        }
+    }
+    label{
+        position: absolute;
+        left: 0;
+        top: 22px;
+        color: rgba($black, .4);
+        font-size: 18px;
+        transition: all .3s;
+    }
+
     input,
     textarea{
         border: none;
@@ -19,6 +41,15 @@
         }
         &:focus{
             border-color: rgba($black, .7);
+        }
+    }
+    textarea:focus,
+    input:focus,
+    .input-active{
+        &+label{
+            top: -5px;
+            font-size: 12px;
+            line-height: 20px;
         }
     }
     textarea{

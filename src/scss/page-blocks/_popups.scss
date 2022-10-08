@@ -55,6 +55,14 @@
         margin: 30px auto 0;
         max-width: 300px;
     }
+    &__hint{
+        margin-top: 40px;
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: -0.8px;
+        color: #676F7B;
+        opacity: 0.8;
+    }
 }
 
 .thank-modal{

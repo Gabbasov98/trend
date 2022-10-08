@@ -1,4 +1,5 @@
-<!DOCTYPE html> <html lang="ru">
+<!DOCTYPE html> <!DOCTYPE  html>
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="css/style.min.css">
     <title>Главная</title>
 </head>
+
 
 
 <style>
@@ -38,7 +40,9 @@
         </a>
 
 
-
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-bs-toggle="modal" data-bs-target="#quickOrder">
+            Быстрый заказ
+        </button>
 
 <!--        <button style="border: 2px solid #000;margin-bottom: 20px;" data-bs-toggle="modal" data-bs-target="#quickOrder">-->
 <!--            Быстрый заказ-->
@@ -46,21 +50,65 @@
 
     </div>
 
-    <div class="modal" id="quickOrder" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal modal--active" id="contactModal">
+    <div class="modal__dialog">
         <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M9.55401 10.5L2 2.94599L2.94599 2L10.5 9.55401L18.054 2L19 2.94599L11.446 10.5L19 18.054L18.054 19L10.5 11.446L2.94599 19L2 18.054L9.55401 10.5Z" fill="#333333"/>
             </svg>
         </button>
 
-
-
+        <form action="" class="modal__form">
+            <div class="modal__form-grid">
+                <fieldset class="form-group">
+                    <input type="tel">
+                    <label>Phone Number</label>
+                </fieldset>
+                <fieldset class="form-group">
+                    <input type="email">
+                    <label>Email Address</label>
+                </fieldset>
+                <fieldset class="form-group">
+                    <input type="text">
+                    <label>First Name</label>
+                </fieldset>
+                <fieldset class="form-group form-group--error" data-error="required">
+                    <input type="text">
+                    <label>Last Name</label>
+                </fieldset>
+                <fieldset class="form-group modal__form-full">
+                    <textarea></textarea>
+                    <label>Your Message</label>
+                </fieldset>
+            </div>
+            <button class="modal__btn mbtn mbtn-secondary">
+                Send Message
+            </button>
+            <div class="modal__hint">All fields are required</div>
+        </form>
     </div>
 </div>
 
+<!--    Этот код js вызовет модалку "Спасибо"-->
+<!--    openModal('thankModal')-->
 
-<!-- <div class="modal-backdrop show"></div> -->
+<div class="modal thank-modal" id="thankModal">
+    <div class="modal__dialog">
+        <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.55401 10.5L2 2.94599L2.94599 2L10.5 9.55401L18.054 2L19 2.94599L11.446 10.5L19 18.054L18.054 19L10.5 11.446L2.94599 19L2 18.054L9.55401 10.5Z" fill="#333333"/>
+            </svg>
+        </button>
+
+        <div class="modal__title display2">Thank you!</div>
+        <div class="modal__desc">Your message has been sent.
+            We will get back to your shortly</div>
+        <button class="modal__btn mbtn mbtn-secondary" onclick="closeModal()">
+            OK
+        </button>
+    </div>
+</div>
+
     <!--  -->
     <script src="js/libs.min.js"></script>
 <script src="js/main.min.js"></script>

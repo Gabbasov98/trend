@@ -35,7 +35,6 @@ let pageSlider = new Swiper(".page",{
         },
         slideChange: function () {
             setHeaderColor()
-            // setScrollType()
         },
         resize: function () {
             setScrollType()
@@ -60,7 +59,6 @@ $(".nav__link").click(function (e) {
     console.log(targetId)
     pageSlider.slideTo(screenIndex,800)
 })
-
 
 function setScrollType() {
     if($(".wrapper").hasClass("_free")){
@@ -92,20 +90,47 @@ function setHeaderColor() {
     }
 }
 
-
-// pageSlider.init()
-
-
-
-
 const resizeHandlerSlider = () => {
     if (window.innerWidth > 992) {
         pageSlider.init()
     }
 }
 
-
-
 resizeHandlerSlider()
 
 window.addEventListener('resize', resizeHandlerSlider);
+
+// function sliderScrollHandler(){
+//     let viewportHeight = window.innerHeight
+//     let contentHeight = $(pageSlider.slides[pageSlider.realIndex]).find(".screen__content").innerHeight()
+//     let scrollPosition = $(pageSlider.slides[pageSlider.realIndex]).scrollTop()
+//     console.log(contentHeight)
+//     console.log(viewportHeight)
+//     if(contentHeight <= viewportHeight){
+//         $('.page').bind('mousewheel', function(e){
+//             if(e.originalEvent.wheelDelta /120 > 0) {
+//                 console.log('scrolling up !');
+//
+//
+//                 console.log(scrollPosition)
+//                 pageSlider.slideTo(pageSlider.realIndex-1,800)
+//             }
+//             else{
+//                 pageSlider.slideTo(pageSlider.realIndex+1,800)
+//                 console.log('scrolling down !');
+//                 console.log(scrollPosition)
+//                 // const element = pageSlider.slides[pageSlider.realIndex]
+//                 // if (element.scrollHeight - element.scrollTop === element.clientHeight) {
+//                 //     pageSlider.slideTo(pageSlider.realIndex+1,800)
+//                 // }
+//             }
+//         });
+//     }
+//
+//
+//
+//
+// }
+
+
+

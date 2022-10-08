@@ -50,13 +50,14 @@
   animation: 10s ease-in-out 0s infinite rectFade;
 }
 
+.fade-animate{
+  animation: 10s ease-in-out 0s infinite rectFade;
+}
+
 @keyframes rectFade {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  0%   { opacity:0; }
+  50%  { opacity:1; }
+  100% { opacity:0; }
 }
 
 .info{
@@ -213,13 +214,13 @@
   &__subtitle{
     color: $primary;
   }
-  &__title,
   &__desc{
     margin-top: 20px;
   }
 }
 
 .why{
+  &__title,
   &__subtitle{
     color: $secondary;
   }
@@ -292,6 +293,175 @@
     }
   }
 }
+
+@media screen and (min-width: 992px){
+  @media screen and (max-height: 950px) {
+    .about{
+      &__desc{
+        padding-top: 50px;
+      }
+      &__bottom{
+        margin-top: 40px;
+      }
+    }
+  }
+
+  @media screen and (max-height: 800px) {
+    .about{
+      &__inner{
+        padding-bottom: 20px;
+      }
+      &__img{
+        height: 220px;
+        margin-left: -30px;
+      }
+      &__desc{
+        padding-top: 10px;
+      }
+      &__bottom{
+        margin-top: 30px;
+      }
+    }
+
+    .why,
+    .history{
+      &__info{
+        padding-top: 50px;
+      }
+    }
+
+    .why2{
+      &__inner{
+        max-width: 1050px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      &__text{
+        font-size: 14px;
+      }
+    }
+  }
+
+  @media screen and (max-height: 700px){
+    .display1{
+      font-size: 70px;
+    }
+    .display2{
+      font-size: 42px;
+    }
+
+    .main{
+      &__title{
+        max-width: 500px;
+      }
+      &__desc{
+        margin-top: 20px;
+        font-size: 30px;
+      }
+      &__btn{
+        margin-top: 25px;
+      }
+    }
+
+    .info{
+      &__img{
+        width: 40%;
+      }
+      &__desc{
+        p{
+          &:not(:last-child){
+            margin-bottom: 15px;
+          }
+        }
+      }
+    }
+
+    .help{
+      &__desc{
+        font-size: 20px;
+      }
+      &__slider{
+        margin-top: 30px;
+      }
+    }
+
+    .history,
+    .about,
+    .why{
+      &__title{
+        max-width: 350px;
+      }
+    }
+
+    .why,
+    .history{
+      &__info{
+        padding-top: 0;
+      }
+    }
+
+    .why2{
+      &__inner{
+        max-width: 950px;
+      }
+      &__text{
+        font-size: 13px;
+      }
+    }
+  }
+
+  @media screen and (max-height: 600px){
+    .display1{
+      font-size: 65px;
+    }
+    .display2{
+      font-size: 38px;
+    }
+    .body-text{
+      font-size: 18px;
+    }
+
+    .history,
+    .about,
+    .why{
+      &__title{
+        max-width: 300px;
+      }
+    }
+
+    .about{
+      &__img{
+        height: 180px;
+      }
+      &__form{
+        &-title{
+          font-size: 22px;
+        }
+        &-field{
+          margin-top: 15px;
+        }
+      }
+    }
+
+    .help{
+      &__title{
+        max-width: 550px;
+      }
+    }
+
+    .why2{
+      &__inner{
+        max-width: 750px;
+        gap: 10px;
+      }
+      &__text{
+        font-size: 10px;
+      }
+    }
+  }
+}
+
+
 
 
 @media screen and (max-width: 992px){
