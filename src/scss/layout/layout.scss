@@ -60,6 +60,7 @@
     }
   }
   .screen{
+    height: unset;
     flex: unset;
     &__content {
       padding-top: 90px;
