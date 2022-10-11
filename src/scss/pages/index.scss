@@ -410,6 +410,22 @@
     }
   }
 
+  @media screen and (max-height: 650px){
+    .about{
+      &__img{
+        height: 180px;
+      }
+      &__form{
+        &-title{
+          font-size: 22px;
+        }
+        &-field{
+          margin-top: 15px;
+        }
+      }
+    }
+  }
+
   @media screen and (max-height: 600px){
     .display1{
       font-size: 65px;
@@ -429,19 +445,7 @@
       }
     }
 
-    .about{
-      &__img{
-        height: 180px;
-      }
-      &__form{
-        &-title{
-          font-size: 22px;
-        }
-        &-field{
-          margin-top: 15px;
-        }
-      }
-    }
+
 
     .help{
       &__title{
@@ -456,6 +460,35 @@
       }
       &__text{
         font-size: 10px;
+      }
+    }
+  }
+
+  @media screen and (max-height: 550px){
+    .screen{
+      &__content{
+        padding-bottom: 50px;
+      }
+    }
+    .main{
+      &__title{
+        max-width: 600px;
+      }
+    }
+    .about{
+      &__img{
+        height: 160px;
+      }
+      &__desc{
+        max-width: unset;
+      }
+      &__form{
+        &-title{
+          font-size: 21px;
+        }
+        &-field{
+          margin-top: 12px;
+        }
       }
     }
   }

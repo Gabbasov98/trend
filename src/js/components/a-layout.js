@@ -25,7 +25,7 @@ let pageSlider = new Swiper(".page",{
     observeParents: true,
     observeSlideChildren: true,
 
-    // allowTouchMove: false,
+    allowTouchMove: false,
 
     init: false,
 
