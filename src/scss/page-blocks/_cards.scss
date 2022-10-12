@@ -4,6 +4,7 @@
   position: relative;
   transition: all .3s;
   &:hover{
+    cursor: pointer;
     background: $secondary;
     color: #fff;
     .help-card__icon{
