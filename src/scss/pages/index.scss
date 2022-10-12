@@ -266,6 +266,46 @@
   }
 }
 
+.price{
+  background: #F9F9F9;
+  &__title{
+    color: $secondary;
+    font-weight: 400;
+  }
+  &__subtitle{
+    max-width: 755px;
+  }
+  &__form{
+    padding-left: 140px;
+    max-width: 1360px;
+    margin-top: 70px;
+    &-grid{
+      display: flex;
+      align-items: flex-end;
+      margin-top: 28px;
+    }
+    .form-group{
+      flex-grow: 1;
+      &:not(:first-child){
+        margin-left: 30px;
+      }
+      input{
+        background: #FFFFFF;
+        padding: 0 16px;
+      }
+      label{
+        padding-left: 16px;
+      }
+    }
+  }
+  &__btn{
+    width: 200px;
+    height: 60px;
+    flex-shrink: 0;
+    margin-left: 24px;
+  }
+}
+
 
 @media screen and (max-width: 1200px){
   .main{
@@ -290,6 +330,12 @@
   .history{
     &__title{
       max-width: 400px;
+    }
+  }
+
+  .price{
+    &__form{
+      padding: 0;
     }
   }
 }
@@ -491,9 +537,17 @@
         }
       }
     }
+
+    .price{
+        &__form{
+          margin-top: 30px;
+          &-grid{
+            margin-top: 15px;
+          }
+        }
+    }
   }
 }
-
 
 
 
@@ -623,6 +677,30 @@
       padding: 0;
       z-index: 2;
       position: relative;
+    }
+  }
+
+  .price{
+    &__title{
+      font-size: 80px;
+    }
+    &__subtitle{
+      font-size: 32px;
+    }
+    &__form{
+      margin-top: 40px;
+      &-grid{
+        display: grid;
+        grid-template-columns: 100%;
+        gap: 40px;
+      }
+      .form-group{
+        margin: 0 !important;
+      }
+    }
+    &__btn{
+      margin: 0;
+      width: 100%;
     }
   }
 }

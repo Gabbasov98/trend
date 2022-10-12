@@ -32,6 +32,7 @@ let pageSlider = new Swiper(".page",{
     on: {
         init: function () {
             setScrollType()
+            setHeaderColor()
         },
         slideChange: function () {
             setHeaderColor()
